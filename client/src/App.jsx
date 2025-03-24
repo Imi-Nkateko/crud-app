@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./components/Navbar";
+import TableList from "./components/TableList";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <>
+      <Navbar />
+      <TableList />
+    </>
+  );
+};
 
-export default App
+export default App;
