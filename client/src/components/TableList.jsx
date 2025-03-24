@@ -58,10 +58,17 @@ const TableList = () => {
                     Active
                   </button>
                 ) : (
-                  <button class="btn btn-outline rounded-3xl">Inactive</button>
+                  <button class="btn btn-outline rounded-3xl text-primary text-[12px]">
+                    Inactive
+                  </button>
                 )}
               </td>
               <th>
+                {/* 
+                    when the update button is click the modal should popup and 
+                    show display the data to edit as placeholder on input field
+                    and when submitted should update table and keep the order of table
+                */}
                 <button className="btn btn-success rounded-md">update</button>
               </th>
               <th>
@@ -69,8 +76,6 @@ const TableList = () => {
               </th>
             </tr>
           ))}
-
-          {/* row 2 */}
         </tbody>
       </table>
     </div>
