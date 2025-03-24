@@ -36,25 +36,27 @@ const TableList = () => {
           <tr>
             <th></th>
             <th>Name</th>
-            <th>Job</th>
             <th>Email</th>
+            <th>Job</th>
             <th>Rate</th>
             <th>Status</th>
           </tr>
         </thead>
-        <tbody className="hover:bg-base-300">
+        <tbody>
           {/* row 1 */}
 
           {employees.map((employee) => (
-            <tr key={employee.id}>
+            <tr key={employee.id} className="hover:bg-base-300">
               <th>{employee.id}</th>
-              <td>{employee.name}</td>
+              <td className="font-bold">{employee.name}</td>
               <td>{employee.email}</td>
               <td>{employee.job}</td>
               <td>{employee.rate}</td>
               <td>
                 {employee.isActive ? (
-                  <button className="btn btn-primary rounded-3xl">Active</button>
+                  <button className="btn btn-primary rounded-3xl">
+                    Active
+                  </button>
                 ) : (
                   <button class="btn btn-outline rounded-3xl">Inactive</button>
                 )}
