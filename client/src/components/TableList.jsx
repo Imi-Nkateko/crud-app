@@ -1,6 +1,6 @@
 import React from "react";
 
-const TableList = () => {
+const TableList = ({ onOpen }) => {
   const employees = [
     {
       id: 1,
@@ -69,7 +69,9 @@ const TableList = () => {
                     show display the data to edit as placeholder on input field
                     and when submitted should update table and keep the order of table
                 */}
-                <button className="btn btn-success rounded-md">update</button>
+                <button className="btn btn-success rounded-md" onClick={onOpen}>
+                  update
+                </button>
               </th>
               <th>
                 <button className="btn btn-error rounded-md">Delete</button>
