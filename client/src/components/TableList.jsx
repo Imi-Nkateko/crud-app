@@ -58,7 +58,7 @@ const TableList = ({ onOpen }) => {
                     Active
                   </button>
                 ) : (
-                  <button class="btn btn-outline rounded-3xl text-primary text-[12px]">
+                  <button className="btn btn-outline rounded-3xl text-primary text-[12px]">
                     Inactive
                   </button>
                 )}
