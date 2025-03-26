@@ -9,6 +9,7 @@ const App = () => {
   const [modalMode, setModalMode] = useState("add");
 
   const handleOpen = (mode) => {
+    console.log("Opening modal in mode:", mode);
     setIsOpen(true);
     setModalMode(mode);
   };
@@ -27,7 +28,7 @@ const App = () => {
       <TableList onOpen={() => handleOpen("edit")} />
       <ModalForm
         isOpen={isOpen}
-        onClose={() => setModalMode(false)}
+        onClose={() => setIsOpen(false)}
         onSubmit={handleSubmit}
         mode={modalMode}
       />
